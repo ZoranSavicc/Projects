@@ -414,7 +414,7 @@ footer ul li a:hover{
     h4{
         font-size: 1.2rem;
     }
-
+    /*NAV MEDIA*/
     nav button{
         display: inline-block;
         background: transparent;
@@ -480,5 +480,53 @@ footer ul li a:hover{
     .nav__menu li a:hover{
         background: var(--color-bg2);
         color: var(--color-white);
+    }
+
+    /*HEADER MEDIA*/
+    header{
+        height: 52vh;
+        margin-bottom: 4rem;
+    }
+
+    .header__container{
+        gap:0;
+        padding-bottom: 3rem;
+    }
+
+    /*CATEGORY MEDIA*/
+    .categories{
+        height: fit-content;
+    }
+
+    .categories__container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .categories__left{
+        margin-right: 0;
+    }
+
+    /*COURSES MEDIA*/
+    .courses{
+        margin-top: 0;
+    }
+
+    .courses__container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*FAQ MEDIA*/
+    .faqs__container{
+        grid-template-columns: 1fr;
+    }
+
+    .faq{
+        padding: 1.5rem;
+    }
+
+    /*FOOTER MEDIA*/
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
     }
 }
