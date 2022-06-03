@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     
+    <!--SWIPER JS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
     <!--STYLES-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -278,9 +281,103 @@
         </div>
     </section>
 
+    <!--TESTIMONIALS-->
+    <section class="container testimonials__container swiper mySwiper">
+        <h2>Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/student.jpg" alt="student">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Diana Jones</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at tempore aspernatur sunt. Praesentium voluptas exercitationem mollitia dolorum nesciunt fuga architecto necessitatibus odit debitis, inventore minima temporibus, ut consequatur. Necessitatibus!
+                    </p>
+                </div>
+            </article>
 
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/student1.jpg" alt="student">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Mark Ham</h5>
+                    <small>Developer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at tempore aspernatur sunt. Praesentium voluptas exercitationem mollitia dolorum nesciunt fuga architecto necessitatibus odit debitis, inventore minima temporibus, ut consequatur. Necessitatibus!
+                    </p>
+                </div>
+            </article>
 
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/student3.jpg" alt="student">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Sarah Cuban</h5>
+                    <small>NFT degen</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at tempore aspernatur sunt. Praesentium voluptas exercitationem mollitia dolorum nesciunt fuga architecto necessitatibus odit debitis, inventore minima temporibus, ut consequatur. Necessitatibus!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/student4.jpg" alt="student">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Aaron Smith</h5>
+                    <small>Copywritter</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at tempore aspernatur sunt. Praesentium voluptas exercitationem mollitia dolorum nesciunt fuga architecto necessitatibus odit debitis, inventore minima temporibus, ut consequatur. Necessitatibus!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/student5.jpg" alt="student">
+                </div>
+                <div class="testimonial__info">
+                    <h5>John Johnson</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro at tempore aspernatur sunt. Praesentium voluptas exercitationem mollitia dolorum nesciunt fuga architecto necessitatibus odit debitis, inventore minima temporibus, ut consequatur. Necessitatibus!
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints:{
+              600:{
+                  slidesPerView: 2
+              }
+          }
+        });
+      </script>
 </body>
 </html>
